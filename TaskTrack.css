@@ -1,0 +1,106 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5eb;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6b00;
+  margin: 20px 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.task {
+  background: white;
+  border-left: 6px solid #ff6b00;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff6b00;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkbox.checked {
+  position: relative;
+}
+.checkbox.checked::after {
+  content: "✓";
+  color: #ff6b00;
+  font-weight: bold;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.buttons button {
+  margin-left: 5px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit {
+  background: white;
+  border: 2px solid black;
+}
+
+.delete {
+  background: white;
+  border: 2px solid black;
+}
+
+.task-body {
+  margin-top: 10px;
+  color: #555;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6b00;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
